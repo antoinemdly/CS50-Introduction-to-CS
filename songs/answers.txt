@@ -1,0 +1,1 @@
+calculate an average for every detail of the songs and then match a aura for those numbers

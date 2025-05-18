@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr>
+                <th>Buy/Sell</th>
+                <th>Symbol</th>
+                <th>Price</th>
+                <th>Shares</th>
+                <th>Transacted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in table %}
+                <tr>
+                    <td>{{ row['statue'] }}</td>
+                    <td>{{ row['stock'] }}</td>
+                    <td>{{ row['price'] }}</td>
+                    <td>{{ row['shares'] }}</td>
+                    <td>{{ row['time'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
